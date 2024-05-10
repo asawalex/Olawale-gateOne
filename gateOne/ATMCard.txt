@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+	public class ATMCard {
+
+		public static void main(String[] args) {
+
+	
+  		}
+		public static boolean creditCard(String cardNumber) {
+		
+		if(cardNumber.length() > 16 || cardNumber.length() <= 13) {
+					return false;
+		}
+				
+
+		for(int counter = cardNumber.length -1; counter = 0; coiunter--) {
+			int digit = Char.getNumericValue(cardNumber.charAt(counter));
+				int temp = 2;
+				digit *= temp;
+                		if (digit > 9) {
+                   		 digit -= 9;
+				}
+			}
+			int  sum = digit;
+		}
+		return sum % 10 == 0;
